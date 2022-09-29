@@ -1,0 +1,164 @@
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="this is my first html page">
+      <meta name="keywords" content="html css javascript">
+      <title>gym</title>
+      <link rel="stylesheet" href="C:\Users\Mohan\Desktop\web\gym.css ">
+    </head>
+    <body bgcolor="#000000">
+        <!--nav bar-->
+
+<!--navbar-->
+<nav class="navbar">
+    <h1 class="gym-heading">GYM</h1>
+    <ul class="nav-options">
+      <li class="link active"><a href="#">Home</a></li>
+      <li class="link"><a href="#">Equipment</a></li>
+      <li class="link"><a href="#">members</a></li>
+      <li class="link"><a href="#">payment</a></li>
+      <li class="link"><a href="#">About</a></li>
+      <li class="link"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="home-section">
+    <h1 class="home-heading" color="white">“If you don’t make time for exercise, you’ll probably have to make time for illness.”</h1>
+    <img src="C:\Users\Mohan\Desktop\web\img\gym1.jpg" alt="my photo" class="home-image">
+  </section>
+
+  <!-- EQUIPMENT SECTION-->
+  <section class="equip-section">
+    <h1 class="equip-heading">GYM EQUIPMENT</h1>
+    <div class="equip-container">
+      <div class="equip-card">
+        <img src="C:\Users\Mohan\Desktop\web\img\threadmill.jpg" alt="img" class="equip-img">
+        <div class="equip-content">
+          <h2 class="card-heading">01</h2>
+          <p class="card-info">A treadmill is an exercise machine for walking or running in place. If it's bitterly cold outside, you might decide to go to the gym and run on the treadmill instead of taking your usual outdoor jog. A treadmill was originally a type of human- or animal-powered machine..</p>
+        
+        </div>
+      </div>
+      <div class="equip-card">
+        <img src="C:\Users\Mohan\Desktop\web\img\images.jpg" alt="img" class="equip-img">
+        <div class="equip-content">
+          <h2 class="card-heading">02</h2>
+          <p class="card-info">The Leg Recovery System gives you fresh legs faster, helps you warm up pre workout, and recover right post training and competition. Trusted by 97% of pro teams, NormaTec's patented technology increases circulation, reduces pain and soreness, and gives you that competitive edge.
+            .</p>
+        
+        </div>
+      </div>
+      <div class="equip-card">
+        <img src="C:\Users\Mohan\Desktop\web\img\chest-dumbbell-workout.jpg" alt="img" class="equip-img">
+        <div class="equip-content">
+          <h2 class="card-heading">03</h2>
+          <p class="card-info">The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.
+            .</p>
+        
+        </div>
+      </div>
+      <div class="equip-card">
+        <img src="C:\Users\Mohan\Desktop\web\img\download.jpg" alt="img" class="equip-img">
+        <div class="equip-content">
+          <h2 class="card-heading">04</h2>
+          <p class="card-info">Maintaining control, use abs to sit back up to starting position. That's one rep. What to know: Gym-goers typically use this machine for building their lower back, butt, and hamstrings, but you can also get a great abs workout when you do situps on it,
+            .</p>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="member-section">
+    <div class="member-table">
+        <table>
+            <tr>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>PAYMENT AMOUNT</th>
+                <th>DOP</th>
+            </tr>
+            <tr>
+                <td>mohan</td>
+                <td>Ramanagara</td>
+                <td>500</td>
+                <td>15/08/2022</td>
+            </tr>
+            <tr>
+                <td>Ramesh</td>
+                <td>channapattana</td>
+                <td>1000</td>
+                <td>19/09/2022</td>
+            </tr>
+            <tr>
+                <td>Ramesh</td>
+                <td>channapattana</td>
+                <td>1000</td>
+                <td>19/09/2022</td>
+            </tr>
+            <tr>
+                <td>Ramesh</td>
+                <td>channapattana</td>
+                <td>1000</td>
+                <td>19/09/2022</td>
+            </tr>
+            <tr>
+                <td>Ravi</td>
+                <td>channapattana</td>
+                <td>1000</td>
+                <td>19/09/2022</td>
+            </tr>
+            <tr>
+                <td>kumar</td>
+                <td>channapattana</td>
+                <td>1000</td>
+                <td>19/09/2022</td>
+            </tr>
+            <tr>
+                <td>Likith</td>
+                <td>channapattana</td>
+                <td>1000</td>
+                <td>19/09/2022</td>
+            </tr>
+            <tr>
+                <td>Chandan</td>
+                <td>channapattana</td>
+                <td>1000</td>
+                <td>19/09/2022</td>
+            </tr>
+            
+        </table>
+    </div>
+  </section>
+  <section class="payment-section">
+    <div class="body-text">Write your name in the right fields. Also write your imaginary card number. By clicking CCV field card will turn.</div>
+  <form>
+    <div class="form-container">
+      <div class="personal-information">
+        <h1>Payment Information</h1>
+      </div> <!-- end of personal-information -->
+           
+          <input id="column-left" type="text" name="first-name" placeholder="First Name"/>
+          <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
+          <input id="input-field" type="text" name="number" placeholder="Card Number"/>
+          <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+          <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+         
+          <div class="card-wrapper"></div>
+      
+          <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Streed Address"/>
+          <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
+          <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="ZIP code"/>
+          <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+          <input id="input-button" type="submit" value="Submit"/>
+        
+    </form>
+  </div>
+
+  </section>
+  <script src="C:\Users\Mohan\Desktop\web\img\gym.js">
+</script>
+</body>
+</html>
+
+      

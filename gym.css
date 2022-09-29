@@ -1,0 +1,301 @@
+*{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.navbar{
+    background-color: white;
+    color: white;
+    display: grid;
+    font-size:20px;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    opacity: 0.8;
+    z-index: 9;
+}
+
+.gym-heading{
+    padding-right: 80px;
+    color:black;
+    font-size: 50px;
+}
+.nav-options{
+    display: flex;
+  list-style: none;
+  color: black;
+  
+}
+
+
+.home-section.active,
+.equip-section.active,
+.member-section.active,
+.payment-section.active{
+  opacity: 1;
+  position: relative;
+  z-index: 8;
+}
+
+/* home section */
+.home-section{
+    width: 100%;
+    height: 100vh;
+    padding: 0 150px;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    opacity: 1;
+    z-index: 0;
+  }
+
+  .home-heading{
+    color: black;
+    font-size: 100px;
+    text-transform: capitalize;
+    background-color:yellow;
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 80px;
+    left: 400px;
+    display:flex;
+}
+
+  .home-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.8;
+    justify-items: center;
+  }
+
+  /* equip-section */
+.equip-section{
+    width: 100%;
+    height: 500%;
+    padding: 0 150px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: fixed;
+    background-color:black;
+  }
+  
+  .equip-heading{
+    font-size: 70px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: black;
+    color: white;
+    background-clip: text;
+    -webkit-text-stroke: 1px rgb(black);
+    -webkit-background-clip: text;
+    margin-bottom: 10px;
+    background: #e3e3e3;
+       background: -moz-linear-gradient(top, #e3e3e3, #c8c8c8);
+       background: -webkit-gradient(linear, left top, left bottom, from(#1ab4b9), to(#c8c8c8));
+       padding: 10px 20px;
+       margin-left: -20px;
+       margin-top: 0;
+       position: relative;
+       width: 105%;
+   
+      -moz-box-shadow: 1px 1px 3px #292929;
+      -webkit-box-shadow: 1px 1px 3px #292929;
+         box-shadow: 1px 1px 3px #292929;
+   
+      color: #454545;
+      text-shadow: 0 1px 0 white;
+  }
+  
+  .equip-container{
+    display: grid;
+    top:20%;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 60px;
+  }
+  
+  .equip-card{
+    height: 300px;
+    position: relative;
+  }
+  
+  .equip-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top:0%;
+    left: 0;
+    position: absolute;
+  }
+  
+  .equip-card:hover .equip-img{
+    filter: blur(20px);
+  }
+  
+  .equip-content{
+    opacity: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .equip-card:hover .equip-content{
+    opacity: 1;
+  }
+  .card-info
+  {
+    font-size:20px;
+    color:black;
+    text-transform: capitalize;
+  }
+  
+.member-section{
+    opacity: 0;
+    width: 60%;
+    padding:80px 150px;
+    align-items: center;
+    top: 100px;
+    position: fixed;
+    align-items: center;
+    z-index: 0;
+    background-color:#e3e3e3;
+  }
+  
+  .member-table,th{
+    border:5px solid;
+    width: 600;
+  }
+  td{
+    border:2px;
+  }
+/*payment-section*/
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,900,700,500);
+
+
+  .payment-section{
+    width: 100%;
+    height: 100%;
+    padding: 0 150px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: fixed;
+    background-color:black;
+  }
+.form-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-wrapper {
+  background-color: #6FB7E9;
+  width: 100%;
+  display: flex;
+
+}
+.personal-information {
+  background-color: #3C8DC5;
+  color: #fff;
+  padding: 1px 0;
+  text-align: center;
+}
+h1 {
+  font-size: 1.3em;
+  font-family: "Roboto"
+}
+input {
+  margin: 1px 0;
+  padding-left: 3%;
+  font-size: 14px;
+}
+input[type="text"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+}
+input[type="email"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+}
+input[type="submit"]{
+  display: block;
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #3C8DC5;
+  color: #fff;
+  margin-top: 2px;
+  curson: pointer;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  background-color: #6FB7E9;
+  transition: 0.3s ease;
+}
+#column-left {
+  width: 46.5%;
+  float: left;
+  margin-bottom: 2px;
+}
+#column-right {
+  width: 46.5%;
+  float: right;
+}
+
+@media only screen and (max-width: 480px){
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form-container {
+    margin: 0 2%;
+  }
+  input {
+    font-size: 1em;
+  }
+  #input-button {
+    width: 100%;
+  }
+  #input-field {
+    width: 96.5%;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  input {
+    margin: 2px 0;
+  }
+  input[type="submit"]{
+    height: 50px;
+  }
+  #column-left {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+  #column-right {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+}
